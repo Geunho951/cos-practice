@@ -2,9 +2,19 @@
 #include <cstring>
 using namespace std;
 int uadd_ok(unsigned a, unsigned b) {
+	int sum;
+	sum a+b;
+
+	if(sum <a)
+		return 0;
+	return 1;
+}
+int tadd_ok(int a, int b) {
+	int sum;
+	sum a+b;
+
 	return 0;
 }
-int tadd_ok(int a, int b) {}
 int main(int argc, char *argv[]) {
 	int a, b;
 	unsigned x,y ;
