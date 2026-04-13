@@ -9,10 +9,10 @@ void print_command(char *argv[]);
 int check_validity(char *input);
 void init_bit_vector(char *input, char *bv);
 void print_bit_vector(char *bv);
-unsigned int b2u(char * bv)
-int b2s(char *bv)
-int b2o(char *bv)
-int b2t(char *bv)
+unsigned int b2u(char * bv);
+int b2s(char *bv);
+int b2o(char *bv);
+int b2t(char *bv);
 
 
 int main(int argc, char *argv[])
@@ -35,16 +35,22 @@ int main(int argc, char *argv[])
     init_bit_vector(argv[1], bv1);
     init_bit_vector(argv[2], bv2);
     print_bit_vector(bv1);
-    printf(" - B2U: %u\n", b2u(bv1))
-    printf(" - B2U: %s\n", b2u(bv1))
-    printf(" - B2U: %o\n", b2u(bv1))
-    printf(" - B2U: %t\n", b2u(bv1))
+    printf(" - B2U: %u\n", b2u(bv1));
+    printf(" - B2U: %s\n", b2u(bv1));
+    printf(" - B2U: %o\n", b2u(bv1));
+    printf(" - B2U: %t\n", b2u(bv1));
 
     
     print_bit_vector(bv2);
+    printf(" - B2U: %u\n”, b2u(bv2));
+    printf(" - B2S: %d\n”, b2s(bv2));
+    printf(" - B2O: %d\n”, b2o(bv2));
+    printf(" - B2T: %d\n”, b2t(bv2));
+
 
     return 0;
 }
+
 
 void print_command(char *argv[])
 {
