@@ -12,8 +12,8 @@ int main(int argc, char *argv[]){
     human_t *hw;
 
     hw = (human_t *)malloc(sizeof(human_t));
-    hw->name = "Hyunwoo";
-    hw->age = 38;
+    hw->name = "Geunho Park";
+    hw->age = 24;
     hw->gender = 0;
 
     cout << "name: "<< hw->name << " age: " << hw->age 
